@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+
+        header{
+            background-color: white;
+            padding: 10px;
+        }
+
+        nav{
+            background: rgb(128, 128, 128);
+            padding: 15px 3px;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.507)
+        }
+
+        nav:hover > a::after{
+            content: "<-";
+            color: red;
+        }
+
+        nav:hover > a::before{
+            content: "->";
+            color: red;
+        }
+
+        nav > a{
+            display: inline-block;
+            width: 65px;
+            text-align: center;
+            background-color: lightgray;
+            padding: 3px;
+            margin: 0px 25px;
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav > a:hover{
+            color: blue;
+            outline: 1px solid red;
+        }
+
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 0px;
+            box-shadow: 4px 4px 9px rgba(0, 0, 0, 0.637);
+        }
+
+        article{
+            margin: 0px;
+            background-color: lightgray;
+            padding-bottom: 1px;
+        }
+
+        article > h2{
+            padding: 5px;
+            margin-top: 10px;
+        }
+
+        article > p{
+            padding: 0px 5px;
+        }
+
+        article > aside{
+            background-color: rgb(177, 177, 177);
+            text-align: right;
+        }
+
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin: 0px;
+        }
+
+        footer > p{
+            margin: 0px;
+        }
+
+        div#bola{
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            margin: 20px auto;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="notícias">
+            <article>
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus ea, impedit quos necessitatibus modi repellat quas eveniet exercitationem quaerat ipsam harum quisquam rem praesentium nemo minus at dicta mollitia! Id.</p>
+                <aside>
+                    <p>Atigo escrito por José da silva</p>
+                </aside>
+            </article>
+            <article>
+                <h2>Ola rapazes</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid praesentium similique repellendus minus aliquam dicta distinctio excepturi veritatis asperiores dolor, voluptas non quo quidem voluptates quisquam adipisci reprehenderit eos culpa.</p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Davi Perazzoli.</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>
