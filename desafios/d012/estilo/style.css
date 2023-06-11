@@ -74,6 +74,9 @@ section.normal p{
 section.imagem{
     padding: 10vh 30px 10vh 30px;
     background-color: gray;
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 section.imagem p{
@@ -84,6 +87,14 @@ section.imagem p{
     background-color: rgba(0, 0, 0, 0.459);
     color: white;
     text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.644);
+}
+
+section#img1{
+    background-image: url("../imagens/background001.jpg");
+}
+
+section#img2{
+    background-image: url("../imagens/background002.jpg");
 }
 
 footer{
