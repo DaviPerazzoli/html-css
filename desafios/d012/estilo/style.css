@@ -14,7 +14,8 @@
 }
 
 body{
-    background-image: url("../imagens/background001.jpg");
+    min-height: 100vh;
+    background-color: gray;
     background-size: cover;
     background-attachment: fixed;
     background-position: center right;
@@ -31,11 +32,9 @@ h1{
     font-family: var(--fonte-titulo);
     font-size: 10vw;
     font-weight: normal;
+    font-variant: small-caps;
 }
 
-.pequeno{
-    font-size: 7vw;
-}
 
 h2{
     font-family: var(--fonte-texto);
@@ -59,25 +58,29 @@ main{
     font-size: 3.5vw;
 }
 
-section{
-    padding: 70px 30px 100px 30px;
+section.normal{
+    padding: 10vh 30px 10vh 30px;
     background-color: white;
     box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.699);
 }
 
-section p{
+section.normal p{
     display: inline-block;
     line-height: 2em;
     margin: 30px 0px;
     padding: 5px;
 }
 
-section.transparente{
-    box-shadow: none;
-    background-color: transparent;
+section.imagem{
+    padding: 10vh 30px 10vh 30px;
+    background-color: gray;
 }
 
-section.transparente p{
+section.imagem p{
+    display: inline-block;
+    line-height: 2em;
+    margin: 30px 0px;
+    padding: 5px;
     background-color: rgba(0, 0, 0, 0.459);
     color: white;
     text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.644);
