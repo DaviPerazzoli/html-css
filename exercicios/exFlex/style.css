@@ -29,6 +29,7 @@
     /** shorthand para item*/
     flex: 1 1 50px;
 }
+
 /*
 #item-1{
     flex-grow: 1;
@@ -45,7 +46,8 @@
 #item-3{
     flex-shrink: 2
 
-}*/
+}
+*/
 
 #item-2{
     order: 1;
